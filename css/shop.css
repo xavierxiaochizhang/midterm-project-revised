@@ -1,0 +1,634 @@
+/*the subcategory that all of the buttons in the header sit inside of in order to be put to the right side of the page*/
+        .nav{
+          float: right;
+        }
+/*styling for the primary buttons e.g. "home", "locations", "shop", etc*/
+        .buttonA {
+
+
+           border-top: 1px solid #449dd4;
+           background: #447ca1;
+           background: -webkit-gradient(linear, left top, left bottom, from(#f2cfa6), to(#676767));
+           background: -webkit-linear-gradient(top, #f2cfa6, ##676767);
+           background: -moz-linear-gradient(top, #f2cfa6, ##676767);
+           background: -ms-linear-gradient(top, #f2cfa6, ##676767);
+           background: -o-linear-gradient(top, #f2cfa6, #676767);
+           padding: 5px 10px;
+           padding-bottom: 10px;
+           -webkit-border-radius: 11px;
+           -moz-border-radius: 11px;
+           border-radius: 11px;
+           -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+           -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+           box-shadow: rgba(0,0,0,1) 0 1px 0;
+           text-shadow: rgba(0,0,0,.4) 0 1px 0;
+           color: #ffffff;
+           font-size: 120%;
+           font-family: Helvetica, Arial, Sans-Serif;
+           text-decoration: none;
+           text-align: center;
+           margin: 2px;
+     }
+/*secondary styling for sign-in/cart buttons which need to be styled differently from the primary line of buttons*/
+         .buttonb {
+           height: 15%;
+           width: auto;
+
+            border-top: 1px solid #449dd4;
+            background: #447ca1;
+            background: -webkit-gradient(linear, left top, left bottom, from(#f2cfa6), to(#676767));
+            background: -webkit-linear-gradient(top, #f2cfa6, ##676767);
+            background: -moz-linear-gradient(top, #f2cfa6, ##676767);
+            background: -ms-linear-gradient(top, #f2cfa6, ##676767);
+            background: -o-linear-gradient(top, #f2cfa6, #676767);
+            padding: 3px 7px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+            -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+            -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+            box-shadow: rgba(101, 18, 18, 1) 0 1px 0;
+            text-shadow: rgba(0,0,0,.4) 0 1px 0;
+            color: #ffffff;
+            font-size: 60%;
+            font-family: Helvetica, Arial, Sans-Serif;
+            text-decoration: none;s
+            vertical-align: top;
+            margin: 3px;
+      }
+
+/*This is the styling for the tertiary buttons, such as the page select functions*/
+          .buttonc {
+            height: 15%;
+            width: auto;
+
+             border-top: 1px solid #449dd4;
+             background: #447ca1;
+             background: -webkit-gradient(linear, left top, left bottom, from(#f2cfa6), to(#676767));
+             background: -webkit-linear-gradient(top, #f2cfa6, ##676767);
+             background: -moz-linear-gradient(top, #f2cfa6, ##676767);
+             background: -ms-linear-gradient(top, #f2cfa6, ##676767);
+             background: -o-linear-gradient(top, #f2cfa6, #676767);
+             padding: 3px 7px;
+             -webkit-border-radius: 6px;
+             -moz-border-radius: 6px;
+             border-radius: 6px;
+             -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+             -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+             box-shadow: rgba(101, 18, 18, 1) 0 1px 0;
+             text-shadow: rgba(0,0,0,.4) 0 1px 0;
+             color: #ffffff;
+             font-size: 60%;
+             font-family: Helvetica, Arial, Sans-Serif;
+             text-decoration: none;s
+             vertical-align: top;
+             margin: 3px;
+          }
+
+/*Properties of the primary buttons when hovered over and when clicked on*/
+            .buttonA:hover {
+               border-top-color: #28597a;
+               background: #28597a;
+               color: #e3e3e3;
+               }
+            .buttonA:active {
+               border-top-color: #1b435e;
+               background: #1b435e;
+               }
+/*propeteries of the secondary buttons when hovered over and when clicked on*/
+             .buttonb:hover {
+                border-top-color: #28597a;
+                background: #28597a;
+                color: #e3e3e3;
+                }
+             .buttonb:active {
+                border-top-color: #1b435e;
+                background: #1b435e;
+                }
+/*propeteries of the tertiary buttons (page selects) when hovered over and when clicked on*/
+              .buttonc:hover {
+                 border-top-color: #28597a;
+                 background: #28597a;
+                 color: #e3e3e3;
+                 }
+              .buttonc:active {
+                 border-top-color: #1b435e;
+                 background: #1b435e;
+                 }
+
+
+
+
+/*main body styling*/
+             body {
+               width:100%;
+               margin:auto;
+               font-family: 'hipsterish', Fallback, sans-serif;
+               background-image: url("../images/background1.png");
+               background-opacity: 25%;
+               background-color: rgb(237, 232, 219);
+               background-repeat: repeat;
+             }
+
+/*I have not been able to get the fonts configured properly but I did download the source files. It's probably really simple but I will leave this for you Jarell :)*/
+             @font-face {
+             font-family: 'hipsterish';
+             src: url('hipsterish.ttf');
+             }
+
+
+/*This is the class that keeps everything contained as the name suggests. Put all of your header properties in one container, then all of your body in another, and so on.*/
+            .container {
+              width: auto;
+              margin: 0 auto;
+              margin-bottom: 5px;
+            }
+/*styling for the logo's associated text located inside of the header*/
+            .title {
+              width: auto;
+              margin: 0 auto;
+              float: left;
+              -webkit-text-stroke-width: .5px;
+              -webkit-text-stroke-color: white;
+              color: rgb(136, 40, 74);
+              font-size: 80%;
+              font-family: 'hipsterish', Fallback, sans-serif;
+            }
+/*the properties of the logo itself*/
+            .logo {
+              float: left;
+              margin-left: 15px;
+              margin-top: 15px;
+
+            }
+
+/*the header's properties which make up the background and some basic properties*/
+            .header {
+              background: -webkit-gradient(linear, left top, left bottom, from(#e3c08a), to(#a17043));
+              background-image: url(../images/scratchesalt.jpg);
+              width: 100%;
+              background-size: 110%;
+              float: left;
+              position: fixed;
+                  }
+
+
+/**/
+            li {
+              list-style: none;
+              float: right;
+              margin-left: 15px;
+              margin-top: auto;
+            }
+
+
+
+/*This is the banner*/
+              #banner {
+              background:url('../images/crate.jpg');
+              width:60%;
+              min-height:189px;
+
+              margin: auto;
+              border-radius: 15px;
+              padding: 3px;
+              height: 30%;
+              background-size:cover;
+
+            }
+/*This is the banner's text properties*/
+              #bannertext {
+              text-align: center;
+              font-size: 400%;
+              color: rgb(96, 75, 66);
+              margin: auto;
+              padding: inherit;
+              padding-top: 7%;
+              -webkit-text-stroke-width: .5px;
+              -webkit-text-stroke-color: white;
+
+            }
+            #pageselect{
+
+              text-align: center;
+
+              background-color: rgb(236, 231, 211);
+              border-radius: 25px;
+              color: rgb(96, 75, 66);
+              -webkit-text-stroke-width: .5px;
+              -webkit-text-stroke-color: white;
+
+            }
+
+            .content {
+
+              width: 80%;
+              margin: auto;
+              padding: inherit;
+            }
+            .contentalt {
+
+              width: 80%;
+              text-align: center;
+              background-color: rgb(236, 231, 211);
+              border-radius: 25px;
+              color: rgb(96, 75, 66);
+              -webkit-text-stroke-width: .5px;
+              -webkit-text-stroke-color: white;
+              margin: auto;
+              font-size: 120%;
+              padding: inherit;
+
+            }
+            /*This is the class you want to keep your items in to keep everything lined up with 10% space on either side*/
+              .contentlist {
+
+                width: 80%;
+                margin: auto;
+                padding: inherit;
+                font-weight: bold;
+                column-count: 3;
+                -webkit-columns: 3 200px;
+                -moz-columns: 3 200px;
+                columns: 3 200px;
+                -webkit-column-gap: 4em;
+                -moz-column-gap: 4em;
+                column-gap: 4em;
+                -webkit-column-rule: 1px dotted #ddd;
+                -moz-column-rule: 1px dotted #ddd;
+                column-rule: 1px dotted #ddd;
+              }
+
+            /*Here we will remove all of the contentX stylings to save space and avoid overcomplications and create a grid system for the items of our store page.*/
+
+            #item {
+
+              background-color: rgb(236, 231, 211);
+              border-radius: 25px;
+              text-align: center;
+              font-size: 100%;
+              color: rgb(96, 75, 66);
+              -webkit-text-stroke-width: .5px;
+              -webkit-text-stroke-color: white;
+              float: left;
+              margin: 5%;
+              padding: 5%;
+            }
+
+            #pageselect{
+
+              -webkit-text-stroke-width: .5px;
+              -webkit-text-stroke-color: white;
+              color: rgb(136, 40, 74);
+
+
+            }
+
+            #pageselectlast{
+
+              -webkit-text-stroke-width: .5px;
+              -webkit-text-stroke-color: white;
+              color: rgb(136, 40, 74);
+              float: left;
+
+            }
+
+            #pageselectnext{
+
+              -webkit-text-stroke-width: .5px;
+              -webkit-text-stroke-color: white;
+              color: rgb(136, 40, 74);
+              float: right;
+            }
+
+
+
+            #bord {
+
+              background-color: rgb(138, 129, 93);
+              border-radius: 25px;
+              background-size: 20px;
+              text-align: center;
+              margin: auto;
+              padding: inherit;
+
+            }
+
+            #hid {
+              visibility: hidden;
+            }
+
+            #Subtitle {
+              text-align: center;
+              font-size: 200%;
+            }
+
+
+
+            #pagewrap {
+              padding: 5px;
+              width: 960px;
+              margin: 20px auto;
+            }
+
+
+            #sidebar {
+              width: 300px;
+              float: right;
+              margin: auto;
+              padding: 3px;
+              background-color: rgb(236, 231, 211);
+              border-radius: 25px;
+              text-align: center;
+              text-size: 45%;
+            }
+
+            .footer {
+
+              background-color: rgb(135, 130, 107);
+              font-size: 350%;
+              -webkit-text-stroke-width: .5px;
+              -webkit-text-stroke-color: white;
+              margin: auto;
+              margin-bottom: .05px;
+              padding: inherit;
+
+
+
+            }
+
+            #drinkt {
+
+              background-color: rgb(135, 130, 107);
+              border-radius: 25px;
+              text-align: center;
+
+              font-size: 80%;
+              color: rgb(96, 75, 66);
+              -webkit-text-stroke-width: .5px;
+              -webkit-text-stroke-color: white;
+              float: left;
+              width: 100%;
+              padding: inherit;
+              margin: auto;
+
+
+            }
+
+
+
+            #image {
+              max-height: 210px;
+              width: 100%;
+              border-radius: 25px;
+            }
+
+
+            #image2 {
+              max-height: 210px;
+              width: 40%;
+              border-radius: 25px;
+              float: right;
+              background-color:  rgb(135, 130, 107);
+            }
+
+
+
+
+/* copy right area */
+            .copyright {
+              background-color: #D4FCDA;
+              border-radius: 20px;
+              text-align: center;
+
+              font-size: 80%;
+              color: black;
+              -webkit-text-stroke-width: .5px;
+              -webkit-text-stroke-color: black;
+              float: left;
+              width: 100%;
+              padding: inherit;
+              margin: auto;
+            }
+
+
+
+/*these are the controls for how the page contorts when expanded and edited. edit at your own risk, they can be kind of sticky*/
+
+            @media screen and (max-width: 1080px) {
+
+              * { font-size: 1.2rem; }
+
+              #pagewrap {
+                width: 94%;
+              }
+
+
+              #sidebar {
+                width: auto;
+                float: none;
+              }
+
+              li  {
+                width: auto;
+              }
+
+              .title {
+                width: auto;
+              }
+
+
+              .logo {
+                width:auto;
+              }
+
+              #pageselect  {
+                width:auto;
+                size: 100%;
+              }
+
+              .content2 {
+                width: auto;
+                size: 100%;
+              }
+              .contentlist {
+                width: auto;
+                size: 100%;
+              }
+
+            }
+
+
+            @media screen and (max-width: 700px) {
+
+              * { font-size: 1.0rem; }
+
+              .content {
+                width: 70%;
+
+              }
+              #content1 {
+                width: 100%;
+              }
+              #content2 {
+                width: 100%;
+
+              }
+              #content4 {
+                width: 100%;
+              }
+              #content5 {
+                width: 100%;
+
+              }
+
+              #sidebar {
+                width: auto;
+                float: none;
+              }
+              li  {
+                width: auto;
+              }
+
+              .title {
+                width: auto;
+              }
+
+
+              .logo {
+                width:auto;
+              }
+              #banner {
+                width: auto;
+                size: 30%;
+              }
+              .contentlist {
+                width: auto;
+                size: 100%;
+              }
+
+            }
+
+            @media screen and (max-width: 550px) {
+
+              * { font-size: 0.99rem; }
+
+              .header {
+                height: auto;
+              }
+
+              .content {
+                width: 75%;
+
+              }
+              #content1 {
+                width: 100%;
+
+              }
+              #content2 {
+                width: 100%;
+              }
+              #content4 {
+                width: 100%;
+
+              }
+              #content5 {
+                width: 100%;
+              }
+
+              #sidebar {
+                width: auto;
+                float: none;
+              }
+              li  {
+                width: auto;
+              }
+
+              .title {
+                width: auto;
+              }
+
+
+              .logo {
+                width:auto;
+              }
+
+              #banner {
+                width: auto;
+                size: 30%;
+              }
+
+              #pageselect  {
+                width:auto;
+                size: 30%;
+              }
+              .contentlist {
+                width: auto;
+                size: 100%;
+              }
+
+            }
+
+            @media screen and (max-width: 480px) {
+
+              * { }
+
+              .header {
+                height: auto;
+              }
+
+              .content {
+                width: 65%;
+                padding: inherit;
+
+
+              }
+              #content1 {
+                width: 100%;
+                font-size: 300%;
+              }
+              #content2 {
+                width: 100%;
+                font-size: 300%;
+              }
+              #content4 {
+                width: 100%;
+                font-size: 300%;
+              }
+              #content5 {
+                width: 100%;
+                font-size: 300%;
+              }
+              #sidebar {
+                width: auto;
+                float: none;
+
+            }
+
+              #banner {
+                width: auto;
+                size: 30%;
+              }
+
+              #bannertext {
+                width: auto;
+                size: 30%;
+                padding-top: 25%;
+              }
+
+              .content2 {
+                width:auto;
+                size: 30%;
+              }
+
+              #pageselect  {
+                width:auto;
+                size: 30%;
+              }
+
+              /*When fully squished down the site's items row in two which is really weird. maybe take a look at this?*/
+              .contentlist {
+                column-count: 1;
+              }
+
+          }
