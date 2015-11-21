@@ -26,7 +26,7 @@
 				<div>
 					<ul>
 					<li><a href="signin.html"class="buttonb">Sign in</a></li>
-					<li><a href="emptycart.html" class="buttonb">Cart</a></li>
+					<li><a href="register.html"class="buttonb">Register</a></li>
 				</ul>
 				</div>
 
@@ -35,7 +35,6 @@
 						<li> <a href="contactus.html"class="buttonA">Contact Us</a> </li>
 						<li> <a href="Location.html"class="buttonA">Location</a></li>
 						<li> <a href="Aboutus.html" class="buttonA">About</a> </li>
-						<li> <a href="shoppage.html"class="buttonA">Shop</a></li>
 						<li> <a href="home.html"class="buttonA">Home</a> </li>
 					</ul>
 
@@ -62,79 +61,35 @@
 			</div><br/>
 			<div class="content">
 				<div class="shipform">
-				<form autocomplete="on" accept-charset="UTF-8">
+				<form autocomplete="on" accept-charset="UTF-8" action="signincomp.html">
 					<hr>
 				</br>
 			</br>
-					First name:</br>
-					<input required type="text" name="firstname" min="1" max="30">
-					</br>
-					</br>
-					Last name:</br>
-					<input required  type="text" name="last name" min="1" max="30">
-					</br>
-					</br>
-					Email Address:</br>
-					<input required type="email" name="Email" min="1" max="25">
-					</br>
-					</br>
-					Confirm Email Address:</br>
-					<input required type="email" name="Confirm Email" min="1" max="20">
-					</br>
-					</br>
-					Street Address:</br>
-					<input required  type="text" name="Address" min="1" max="25">				
-					</br>
-					</br>
-					City:</br>
-					<input required type="text" name="City" min="1" max="25">
-					</br>
-					</br>
-					Country: 
-					<select>
-					  <option value="Canada">Canada</option>
-					</select>
-					Province:
-					<select>
-						<option value="Alberta">Alberta</option>
-						<option value="British Columbia">British Columbia</option>
-					</select>
-				</br>
-			</br>
-					Phone:</br>
-					<input required type="text" name="phone" min="1" max="20">
-					</br>
-					</br>
-					Apartment Number/Suite No.:</br>
-					<input type="text" name="Apartment" min="1" max="20">
-				</br>
-			</br>
-			<select>
-				<option value="Female">Female</option>
-				<option value="Male">Male</option>
-				<option value="Nonbinary">Non Binary</option>
-
-			</select>
-		</br>
-	</br>
-</br>
+					
 					Username:</br>
-					<input required type="text" name="user" min="1" max="15">
+					<input required type="text" name="user" min="1" max="15" placeholder="Enter Username...">
 					</br>
 					</br>
 					Password:</br>
-					<input required type="password" name="pass" min="1" max="20">
+					<input required type="password" name="pass" min="1" max="20" placeholder="Enter Password...">
 					</br>
 					</br>
 					Confirm Password:</br>
-					<input required type="text" name="conpass" min="1" max="20">
+					<input required type="password" name="compass" min="1" max="20" placeholder="Confirm Password...">
 					</br>
 					</br>
 				</br>
+				<input type="radio" name="sex" value="Remember Me">Remember me?<br>
+			</br>
+			
 
   					<input type="submit" value="Submit">
-  					<input type="Reset" value="Reset">
+  					<a class="buttonb" href="forgotlogin.html"> Forgot Login? </a>
 				</form> 
+
+			</br>
+		</br>
+		<p> Don't have an account? <a href="register.html"> Register now!</a> </p>
 
 				</div>
 <br/>
@@ -161,11 +116,7 @@
 	</div>
 </div>
 
-<div class="copyright">
-	<div class="container">
-		<p>  copyright area </p>
-	</div>
-</div>
+
 
 
 
