@@ -9,14 +9,110 @@
 					<link href="css/banner.css" rel="stylesheet">
 <style type="text/css">
 
-#contain {width: 100%;}
-#photo {float: right; width: 70%;}
-#content {float: left; width: 30%;}
+.container1 {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.map iframe{
+	width: 95%;
+	height:250px;
+	border:none;
+	padding: 1em 15px;
+}
+
+@media (min-width: 992px) {
+
+  .col-md-1 {
+    width: 33.33333333%;
+    float: left;
+   }
+
+  .col-md-2 {
+  	width: 66.66666667%;
+    float: left;
+   }
+}
+
+.contact {
+  padding: 2em 0 ;
+}
+
+
+.contact-grid input[type="text"],.contact-grid textarea{
+	width: 90%;
+	padding: 1em;
+	margin: 0.5em 0.5em;
+	background:none;
+	outline:none;
+	  border: 1px solid black;
+	  font-size:1em;
+	  color:black;
+}
+
+.contact-grid textarea{
+	resize:none;
+}
+.send input[type="submit"]{
+	width: 14%;
+	font-size: 1.1em;
+	background:#FD4641;
+	padding: 0.4em 0.8em;
+	text-align: center;
+	color: #fff;
+	border: none;
+	outline:none;
+	-webkit-appearance: none;
+}
+.send input[type="reset"]{
+	width: 14%;
+	font-size: 1.1em;
+	background:#FD4641;
+	padding: 0.4em 0.8em;
+	text-align: center;
+	color: #fff;
+	border: none;
+	outline:none;
+	-webkit-appearance: none;
+}
+.send input[type="submit"]:hover{
+	background:#37B48E;
+}
+.send input[type="reset"]:hover{
+	background:#37B48E;
+}
+.contact-form {
+	padding: 3em 1em;
+}
+.address-more {
+	color: black;
+  padding: 0 0 2em;
+}
+.contact-in p{
+	font-size:1.1em;
+	color: black;
+	line-height: 1.5em;	
+}
+.address-more h4{
+	color:black;
+	font-size:1.7em;
+	margin: 0 0 0.3em;
+
+}
+.address-more p a{
+	text-decoration:none;
+	color: black;
+}
+.address-more p a:hover{
+	color: black;
+}
 
 </style>
 		</head>
 
-	<body>
+	<body stylr="width=100%">
 
 		<div class="header">
 
@@ -31,17 +127,17 @@
 
 				<div>
 					<ul>
-					<li><a href="signin.html"class="buttonb">Sign in</a></li>
-					<li><a href="register.html"class="buttonb">Register</a></li>
+					<li><a href="signin.html" class="buttonb">Sign in</a></li>
+					<li><a href="register.html" class="buttonb">Register</a></li>
 				</ul>
 				</div>
 
 			<div class="nav">
 					<ul>
-						<li> <a href="contactus.html"class="buttonA">Contact Us</a> </li>
-						<li> <a href="Location.html"class="buttonA">Location</a></li>
+						<li> <a href="contactus.html" class="buttonA">Contact Us</a> </li>
+						<li> <a href="Location.html" class="buttonA">Location</a></li>
 						<li> <a href="Aboutus.html" class="buttonA">About</a> </li>
-						<li> <a href="home.html"class="buttonA">Home</a> </li>
+						<li> <a href="home.html" class="buttonA">Home</a> </li>
 					</ul>
 
 				</div>
@@ -49,53 +145,57 @@
 </div>
 <br/><br/>
 <br/>
-<br/>
-<br/>
-<br/>
+
 
 <div class="container">
-
-
-			
+		
 				<p id="bannertext"><a href="Location.html">Find Us here</a></p>
 			</div><br/>
 			<div class="content">
 
 				</div>
 <br/>
-<br/>
-<br/>
-<br/>
-<div id="contain"> 
-	<div id="content"><h1>Address:</h1>
-    <hr>
-    <h2>4448 Burke St,<br>Burnaby, BC <br>V5G 3J2<br>
-    	(778) 785-3505
-    </h2>        
-    <p>Store hours:<br>Mon - Sat &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3:00a.m. - 9:00 p.m.
-    	<br><br><br></p></div>
-    
-    <div id="photo"> 
-    	<a href="https://www.google.ca/maps/place/4466+Burke+St,+Burnaby,+BC+V5G+3J2/@49.2351682,-123.0278442,12.56z/data=!4m2!3m1!1s0x548676fa0d7cc9f5:0x26d6fb5f607cccbb">
-    	<img src="images/map.jpg" alt="" style="max-width: 600px; max-height: 800px" /></a>
-</div>
 
-</div>
-<br/>
-<br/>
+<div id="container1"> <!--content-->
 
+			<div class="contact-form">
+				<div class="col-md-1 contact-in">
+						<div class="address-more">
+						<h4>Address</h4>
+							<p>Hipster Brewery,</p>
+							<p>4448 Burke St,</p>
+							<p>Burnaby, BC. V5G 3J2</p>
+							<p>Tel: (778) 785-3505</p>
+							<p>Email:<a href="mailto:services@hipbrew.com"> services@hipbrew.com</a></p>
+						</div>
+					
+				</div>
+				<div class="col-md-2 contact-grid">
+					<form autocomplete="on" accept-charset="UTF-8"  action="contactthankyou.html">	
+						<input type="text" value="Name" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Name';}">
+					
+						<input type="text" value="Email" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Email';}">
+						<input type="text" value="Subject" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Subject';}">
+						
+						<textarea cols="77" rows="6" value=" " onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+						<div class="send">
+							<input type="submit" value="Send">
+							<input type="reset" value="Reset">
+						</div>
+					</form>
+				</div>
+				
+				<div class="clearfix"> </div>
+			</div>
 
+			<div class="map">
+			<iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:Eio0NDQ4IEJ1cmtlIFN0LCBCdXJuYWJ5LCBCQyBWNUcgM0oyLCBDYW5hZGE&key=AIzaSyCRCTH1il8xpGl_vkiYzPBMKfGBp771y2Q" allowfullscreen>
+            </iframe>
+			</div>
+		</div>
+	<!--//content-->
 
-
- 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
-<div class="footer">
+			<div class="footer">
 	<div class="container">
 		<p id="drinkt"> The Drink of The Month <a href='drinkofthemonth.html'><img id="image2" src="images/drinkoftheday.jpg"></a><br/>
 
@@ -103,8 +203,6 @@
 
 	</div>
 </div>
-
-
-
 	</body>
 </html>
+
